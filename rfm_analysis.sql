@@ -50,7 +50,7 @@ SELECT
   NTILE(10) OVER(ORDER BY m_rank DESC) AS m_score
 FROM `rfm3030.sales.rfm_metrics`;
 
--- Step 4: total_score
+-- Step 4: Total Score
 CREATE OR REPLACE VIEW `rfm3030.sales.rfm_total_scores`
 AS
 SELECT
